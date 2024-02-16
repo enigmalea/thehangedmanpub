@@ -21,6 +21,8 @@
     "@fontsource/comfortaa": "^5.0.18",
     "@fontsource/special-elite": "^5.0.8",
     "@fontsource/syne-mono": "^5.0.8",
+    "@iconify-json/fa6-solid": "^1.1.20",
+    "@iconify-json/simple-icons": "^1.1.91",
     "astro": "^4.4.0",
     "astro-expressive-code": "^0.32.4",
     "astro-icon": "^1.1.0",

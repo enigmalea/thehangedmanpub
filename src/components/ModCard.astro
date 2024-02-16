@@ -1,0 +1,32 @@
+---
+interface Props {
+  name: string;
+  avatar: string;
+  links: { icon: string; url: string }[];
+}
+
+import { Icon } from "astro-icon/components";
+
+const props = Astro.props;
+---
+
+<div>
+  <img src={props.avatar} alt=`${props.name}'s avatar'` />
+  {props.name}
+  <ul>
+    {
+      props.links.map((link) => (
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+        <li>
+          {typeof link === "object" ? (
+            <a href={link.url}>
+              <Icon name={link.icon} />
+            </a>
+          ) : (
+            link
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</div>

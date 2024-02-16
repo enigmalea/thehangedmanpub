@@ -1,0 +1,15 @@
+name: FoxInBoots
+avatar: "./avatars/fox.png"
+links:
+  - icon: simple-icons:tumblr
+    url: https://thefoxinboots.tumblr.com/
+  - icon: simple-icons:twitter
+    url: https://twitter.com/TheFoxInBoots
+  - icon: simple-icons:mastodon
+    url: https://mastodon.gamedev.place/@foxinboots
+  - icon: simple-icons:archiveofourown
+    url: https://ao3.org/users/FoxInBoots
+mod_duties:
+  - arlathan
+  - da poly
+  - discord

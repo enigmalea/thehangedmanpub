@@ -876,6 +876,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/fa6-solid@npm:^1.1.20":
+  version: 1.1.20
+  resolution: "@iconify-json/fa6-solid@npm:1.1.20"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/9ea6bd302d9f56d8281d1bcdd6e55cd4c89484d806fe9a64debdc2ea27d280c8d47cbae2bd5cf434aaf0d132b2b832b89da28bd59b32ff20fca4dbf09470c52d
+  languageName: node
+  linkType: hard
+
+"@iconify-json/simple-icons@npm:^1.1.91":
+  version: 1.1.91
+  resolution: "@iconify-json/simple-icons@npm:1.1.91"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/a029776c93f614a56bd8f166daaa5c8b771c5297f0c9a73f2c2cf103cb596d6bbee1f2b5325bc3ab1517fc195db448859f2daaf0cb391601019e290122bce7aa
+  languageName: node
+  linkType: hard
+
 "@iconify/tools@npm:^3.0.1":
   version: 3.0.7
   resolution: "@iconify/tools@npm:3.0.7"
@@ -894,7 +912,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/types@npm:^2.0.0":
+"@iconify/types@npm:*, @iconify/types@npm:^2.0.0":
   version: 2.0.0
   resolution: "@iconify/types@npm:2.0.0"
   checksum: 10c0/65a3be43500c7ccacf360e136d00e1717f050b7b91da644e94370256ac66f582d59212bdb30d00788aab4fc078262e91c95b805d1808d654b72f6d2072a7e4b2
@@ -8825,6 +8843,8 @@ __metadata:
     "@fontsource/comfortaa": "npm:^5.0.18"
     "@fontsource/special-elite": "npm:^5.0.8"
     "@fontsource/syne-mono": "npm:^5.0.8"
+    "@iconify-json/fa6-solid": "npm:^1.1.20"
+    "@iconify-json/simple-icons": "npm:^1.1.91"
     "@tailwindcss/typography": "npm:^0.5.10"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.1"
     "@typescript-eslint/parser": "npm:^7.0.1"
