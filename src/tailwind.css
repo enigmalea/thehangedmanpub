@@ -19,9 +19,20 @@
   b,
   strong {
     @apply font-mono;
-    @apply size-5;
+    @apply text-lg;
     @apply uppercase;
     @apply font-normal;
     @apply text-accent-200;
+    @apply tracking-wide;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  a:hover {
+    @apply decoration-wavy;
+    @apply underline;
+    @apply underline-offset-8;
   }
 }

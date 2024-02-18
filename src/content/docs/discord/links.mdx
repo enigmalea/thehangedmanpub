@@ -7,6 +7,8 @@ sidebar:
   order: 1
 ---
 
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
 A collection of links which is useful for members of the Discord server.
 
 ## Discord Bots
@@ -14,14 +16,66 @@ A collection of links which is useful for members of the Discord server.
 These bots are used in our Discord for various functions. Dashboards are only
 linked if regular members are able to access a dashboard for use.
 
-| Bot          | Nickname            | Website                       | Manual                 | Dashboard         | Use                                      |
-| ------------ | ------------------- | ----------------------------- | ---------------------- | ----------------- | ---------------------------------------- |
-| Carl-bot     | Corff the Bartender | [Carl.gg][carl]               | [Here][carl.docs]      |                   | primary moderation bot                   |
-| Archivist    | _none_              | [archivistbot.com][archivist] | [Here][archivist.docs] |                   | detects AO3 links & provides more info   |
-| Writer-Bot   | Norah               | [top.gg][wb]                  | [Here][wb.docs]        |                   | sprints, projects, & other writing utils |
-| Tarot Bot    | Rivaini Seer        | [tarotbot.cards][tarot]       |                        |                   | provides tarot readings in tarot         |
-| Birthday Bot | Sebastian           | [discord.bots.gg][bb]         | [Here][bb.docs]        |                   | announces birthdays & anniversaries      |
-| sesh         | Josephine           | [sesh.fyi][sesh]              | [Here][sesh.docs]      | [Here][sesh.dash] | event scheduler, reminder, and polls     |
+<Tabs>
+<TabItem label="Carl-bot">
+
+- **Nickname:** Corff the Bartender
+- **Website:** [Carl.gg][carl]
+- **Manual:** [Here][carl_docs]
+- **Use:** primary moderation and multi-use bot.
+
+</TabItem>
+
+<TabItem label="Archivist">
+
+- **Nickname:** _none_
+- **Website:** [archivistbot.com][archivist]
+- **Manual:** [Here][archivist_docs]
+- **Use:** detects AO3 links, scrapes data from AO3, and provides information in
+  a discord embed.
+
+</TabItem>
+
+<TabItem label="Writer-Bot">
+
+- **Nickname:** Norah
+- **Website:** [top.gg][wb]
+- **Manual:** [Here][wb_docs]
+- **Use:** sprints, projects, and other writing utils.
+
+</TabItem>
+
+<TabItem label="Tarot Bot">
+
+- **Nickname:** Rivani Seer
+- **Website:** [Here][tarot]
+- **Use:** provides tarot readings
+
+</TabItem>
+
+<TabItem label="Birthday Bot">
+
+- **Nickname:** Sebastian
+- **Website:** [discord.bots.gg][bb]
+- **Manual:** [Here][bb_docs]
+- **Use:** celebrate your birthday on the server! Provide birthday bot with a
+  date and it will give you a birthday role and announce your birthday so
+  everyone can celebrate!
+
+</TabItem>
+
+<TabItem label="sesh">
+
+- **Nickname:** Josephine
+- **Website:** [sesh.fyi][sesh]
+- **Manual:** [Here][sesh_docs]
+- **Dashboard:** [Here][sesh_dash]
+- **Use:** event scheduler, reminder, and polls bot. Everyone has access to the
+  dashboard, so feel free to add your Dragon Age events to the server calendar!
+
+</TabItem>
+
+</Tabs>
 
 ## AO3 Links
 
@@ -37,16 +91,14 @@ linked if regular members are able to access a dashboard for use.
   instructions for adding prompts in case AO3 throws you for a loop.</span>
 
 [carl]: https://carl.gg/
-[carl.docs]: https://docs.carl.gg/
+[carl_docs]: https://docs.carl.gg/
 [archivist]: https://www.archivistbot.com
-[archivist.docs]: https://www.archivistbot.com/docs/intro
+[archivist_docs]: https://www.archivistbot.com/docs/intro
 [wb]: https://top.gg/bot/460090810029965312
-[wb.docs]: https://github.com/cwarwicker/discord-Writer-Bot/wiki
+[wb_docs]: https://github.com/writer-bot/bot/wiki
 [tarot]: https://tarotbot.cards/
 [bb]: https://discord.bots.gg/bots/470673087671566366
-[bb.docs]: https://github.com/NoiTheCat/BirthdayBot/blob/main/Readme.md
+[bb_docs]: https://noithecat.dev/bots/BirthdayBot/
 [sesh]: https://sesh.fyi
-[sesh.docs]: https://sesh.fyi/manual/
-[sesh.dash]: https://sesh.fyi/dashboard
-[hydra]: https://hydra.bot/
-[hydra.docs]: https://hydra.bot/commands?category=everyone
+[sesh_docs]: https://sesh.fyi/manual/
+[sesh_dash]: https://sesh.fyi/dashboard
