@@ -15,4 +15,13 @@
   h1 {
     @apply text-center;
   }
+
+  b,
+  strong {
+    @apply font-mono;
+    @apply size-5;
+    @apply uppercase;
+    @apply font-normal;
+    @apply text-accent-200;
+  }
 }

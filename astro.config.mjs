@@ -35,21 +35,21 @@ export default defineConfig({
             content: "./banner.png",
           },
         },
-				{
+        {
           tag: "meta",
           attrs: {
             property: "og:image:type",
             content: "image/png",
           },
         },
-				{
+        {
           tag: "meta",
           attrs: {
             property: "og:image:height",
             content: "499",
           },
         },
-				{
+        {
           tag: "meta",
           attrs: {
             property: "og:image:width",

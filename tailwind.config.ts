@@ -2,23 +2,24 @@ import defaultTheme from "tailwindcss/defaultTheme";
 import starlightPlugin from "@astrojs/starlight-tailwind";
 
 const accent = {
-  200: "#fcb3af",
+  200: "#f9b4b1",
   600: "#ca002b",
-  900: "#640010",
-  950: "#450c0f",
+  900: "#620713",
+  950: "#430e11",
 };
 const gray = {
-  100: "#f6f6f7",
-  200: "#ededef",
-  300: "#c2c2c3",
-  400: "#8b8b8e",
-  500: "#58585a",
-  700: "#38383a",
-  800: "#262629",
-  900: "#181819",
+  100: "#f7f6f5",
+  200: "#eeedec",
+  300: "#c3c2c0",
+  400: "#8d8b87",
+  500: "#5a5854",
+  700: "#3a3835",
+  800: "#282723",
+  900: "#191817",
 };
 
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss";
+
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   plugins: [starlightPlugin()],
@@ -32,4 +33,4 @@ export default {
       },
     },
   },
-};
+} satisfies Config;
