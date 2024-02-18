@@ -35,4 +35,8 @@
     @apply underline;
     @apply underline-offset-8;
   }
+
+  .social {
+    @apply mt-0 !important;
+  }
 }

@@ -12,7 +12,7 @@ import { Icon } from "astro-icon/components";
 const props = Astro.props;
 ---
 
-<div class="grid grid-flow-col grid-rows-2 gap-x-3 font-bold">
+<div class="grid grid-flow-col grid-rows-2 gap-x-5 font-bold">
   <div class="row-span-2 w-[75px]">
     <img
       src={props.avatar.src}
@@ -20,8 +20,8 @@ const props = Astro.props;
       class="w-[75px] rounded-full"
     />
   </div>
-  <div>{props.name}</div>
-  <div class="self-start">
+  <div class="justify-end">{props.name}</div>
+  <div class="social self-start">
     <ul class="grid grid-flow-col place-content-start items-end gap-4 p-0">
       {
         props.links.map((link) => (
@@ -40,9 +40,3 @@ const props = Astro.props;
     </ul>
   </div>
 </div>
-
-<style>
-  div {
-    margin-top: 0px !important;
-  }
-</style>
