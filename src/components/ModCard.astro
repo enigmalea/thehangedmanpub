@@ -1,8 +1,10 @@
 ---
+import type { ImageMetadata } from "astro";
 interface Props {
   name: string;
-  avatar: string;
+  avatar: ImageMetadata;
   links: { icon: string; url: string }[];
+  mod_duties: string[];
 }
 
 import { Icon } from "astro-icon/components";
@@ -10,23 +12,37 @@ import { Icon } from "astro-icon/components";
 const props = Astro.props;
 ---
 
-<div>
-  <img src={props.avatar} alt=`${props.name}'s avatar'` />
-  {props.name}
-  <ul>
-    {
-      props.links.map((link) => (
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-        <li>
-          {typeof link === "object" ? (
-            <a href={link.url}>
-              <Icon name={link.icon} />
-            </a>
-          ) : (
-            link
-          )}
-        </li>
-      ))
-    }
-  </ul>
+<div class="grid grid-flow-col grid-rows-2 gap-x-3 font-bold">
+  <div class="row-span-2 w-[75px]">
+    <img
+      src={props.avatar.src}
+      alt=`${props.name}'s avatar`
+      class="w-[75px] rounded-full"
+    />
+  </div>
+  <div>{props.name}</div>
+  <div class="self-start">
+    <ul class="grid grid-flow-col place-content-start items-end gap-4 p-0">
+      {
+        props.links.map((link) => (
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+          <li class="inline list-none align-middle">
+            {typeof link === "object" ? (
+              <a href={link.url}>
+                <Icon name={link.icon} />
+              </a>
+            ) : (
+              link
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </div>
+
+<style>
+  div {
+    margin-top: 0px !important;
+  }
+</style>

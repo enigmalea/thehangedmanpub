@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2022: true,
     node: true,
   },
   extends: [
@@ -13,6 +13,11 @@ module.exports = {
     "plugin:css/standard",
     "plugin:tailwindcss/recommended",
   ],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: true,
+    tsconfigRootDir: __dirname,
+  },
   plugins: ["@typescript-eslint", "css"],
   overrides: [
     {
@@ -34,11 +39,6 @@ module.exports = {
       rules: {},
     },
   ],
-  parserOptions: {
-    parser: "@typescript-eslint/parser",
-    project: true,
-    tsconfigRootDir: __dirname,
-  },
   root: true,
   rules: {},
 };

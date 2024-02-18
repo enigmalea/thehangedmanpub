@@ -18,17 +18,18 @@ const events = ["arlathan", "da poly"] as const;
 
 const modCollection = defineCollection({
   type: "data", // v2.5.0 and later
-  schema: z.object({
-    name: z.string(),
-    avatar: z.string(),
-    links: z
-      .object({
-        icon: z.enum(icon),
-        url: z.string().url(),
-      })
-      .array(),
-    mod_duties: z.enum([...communities, ...events]).array(),
-  }),
+  schema: (tools) =>
+    z.object({
+      name: z.string(),
+      avatar: tools.image(),
+      links: z
+        .object({
+          icon: z.enum(icon),
+          url: z.string().url(),
+        })
+        .array(),
+      mod_duties: z.enum([...communities, ...events]).array(),
+    }),
 });
 
 export const collections = {

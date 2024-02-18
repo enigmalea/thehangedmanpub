@@ -1,0 +1,133 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import ModCard from "../components/ModCard.astro";
+
+import { getCollection } from "astro:content";
+
+const discordMods = [
+  ...(await getCollection("mods", (mod) =>
+    mod.data.mod_duties.includes("discord")
+  )),
+];
+
+const pillowfortMods = [
+  ...(await getCollection("mods", (mod) =>
+    mod.data.mod_duties.includes("pillowfort")
+  )),
+];
+
+const dreamwidthMods = [
+  ...(await getCollection("mods", (mod) =>
+    mod.data.mod_duties.includes("dreamwidth")
+  )),
+];
+
+const arlathanMods = [
+  ...(await getCollection("mods", (mod) =>
+    mod.data.mod_duties.includes("arlathan")
+  )),
+];
+
+const dapolyMods = [
+  ...(await getCollection("mods", (mod) =>
+    mod.data.mod_duties.includes("da poly")
+  )),
+];
+---
+
+<StarlightPage frontmatter={{ title: "Leadership Team" }}>
+  Our leadership teams are responsible for managing the day-to-day operations of
+  our communities and events and enforcing our <a href="/code"
+    >Code of Conduct</a
+  >. Each community or event may have different moderators.
+
+  <h2>Discord</h2>
+  <div
+    class="grid grid-cols-1 items-end justify-items-start gap-10 sm:grid-cols-2 md:grid-cols-3"
+  >
+    {
+      discordMods.map(async (mod) => {
+        return (
+          <ModCard
+            name={mod.data.name}
+            avatar={mod.data.avatar}
+            links={mod.data.links}
+            mod_duties={mod.data.mod_duties}
+          />
+        );
+      })
+    }
+  </div>
+
+  <h2>Pillowfort</h2>
+  <div
+    class="grid grid-cols-1 items-end justify-items-start gap-10 sm:grid-cols-2 md:grid-cols-3"
+  >
+    {
+      pillowfortMods.map(async (mod) => {
+        return (
+          <ModCard
+            name={mod.data.name}
+            avatar={mod.data.avatar}
+            links={mod.data.links}
+            mod_duties={mod.data.mod_duties}
+          />
+        );
+      })
+    }
+  </div>
+
+  <h2>Dreamwidth</h2>
+  <div
+    class="grid grid-cols-1 items-end justify-items-start gap-10 sm:grid-cols-2 md:grid-cols-3"
+  >
+    {
+      dreamwidthMods.map(async (mod) => {
+        return (
+          <ModCard
+            name={mod.data.name}
+            avatar={mod.data.avatar}
+            links={mod.data.links}
+            mod_duties={mod.data.mod_duties}
+          />
+        );
+      })
+    }
+  </div>
+
+  <h2>Arlathan eXchange</h2>
+  <div
+    class="grid grid-cols-1 items-end justify-items-start gap-10 sm:grid-cols-2 md:grid-cols-3"
+  >
+    {
+      arlathanMods.map(async (mod) => {
+        return (
+          <ModCard
+            name={mod.data.name}
+            avatar={mod.data.avatar}
+            links={mod.data.links}
+            mod_duties={mod.data.mod_duties}
+          />
+        );
+      })
+    }
+  </div>
+
+  <h2>DA Polyshipping</h2>
+  <div
+    class="grid grid-cols-1 items-end justify-items-start gap-10 sm:grid-cols-2 md:grid-cols-3"
+  >
+    {
+      dapolyMods.map(async (mod) => {
+        return (
+          <ModCard
+            name={mod.data.name}
+            avatar={mod.data.avatar}
+            links={mod.data.links}
+            mod_duties={mod.data.mod_duties}
+          />
+        );
+      })
+    }
+  </div>
+</StarlightPage>
