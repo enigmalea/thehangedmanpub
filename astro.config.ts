@@ -5,15 +5,14 @@ import metaTags from "astro-meta-tags";
 import sitemap from "@astrojs/sitemap";
 import starlight from "@astrojs/starlight";
 import starlightLinksValidator from "starlight-links-validator";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://thehangedmanpub.netlify.app",
-  extends: "astro/tsconfigs/strictest",
+
   integrations: [
     icon(),
-    tailwind(),
     sitemap(),
     metaTags(),
     expressiveCode({
@@ -68,9 +67,13 @@ export default defineConfig({
         "@fontsource/syne-mono",
         "@fontsource/special-elite",
       ],
-      social: {
-        discord: "https://discord.gg/9RERC6R",
-      },
+      social: [
+        {
+          icon: "discord",
+          label: "Discord",
+          href: "https://discord.gg/9RERC6R",
+        },
+      ],
       sidebar: [
         { label: "Home", link: "/" },
         { label: "Code of Conduct", link: "/code" },
@@ -141,8 +144,9 @@ export default defineConfig({
       ],
       plugins: [starlightLinksValidator()],
     }),
-    tailwind({
-      applyBaseStyles: false,
-    }),
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

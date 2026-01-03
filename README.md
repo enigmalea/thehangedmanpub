@@ -20,20 +20,19 @@ for contributions at this time.
 ### Before You Begin
 
 - Install Node.js.
-- Install yarn.
 - Clone the repo locally.
 
 ### Local Development
 
-Start by running `yarn install` to install packages.
+Start by running `npm install` to install packages.
 
-Start a local development server and open up a browser window with `yarn start`.
+Start a local development server and open up a browser window with `npm start`.
 Most changes are reflected live without having to restart the server.
 
 ### Build
 
-```bash
-yarn build
+```
+npm build
 ```
 
 This command generates static content into the `dist` directory and can be
