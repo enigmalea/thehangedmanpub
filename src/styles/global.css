@@ -5,7 +5,7 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 
 @theme {
-  --font-sans: "Lexend", sans-serif;
+  --font-sans: "Lexend Variable", sans-serif;
   --font-mono: "Monaspace Krypton", monospace;
   --font-serif: "Patrick Hand SC", sans-serif;
   --font-title: "Germania One", sans-serif;
