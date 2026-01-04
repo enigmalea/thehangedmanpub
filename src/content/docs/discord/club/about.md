@@ -1,9 +1,5 @@
 ---
-title: Fic Club
-slug: /discord/club
-sidebar:
-  label: Fic Club
-  order: 1
+title: About
 ---
 
 The Hanged Man's **Fic Club** is an event run on Discord and mirrored on the

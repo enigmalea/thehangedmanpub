@@ -29,6 +29,8 @@
   --color-white: var(--color-creamer);
   --color-gray-100: var(--color-rooibos);
   --color-gray-300: var(--color-ostkaka);
+  --color-gray-400: var(--color-croissant);
+  --color-gray-500: var(--color-rooibos);
   --color-gray-700: var(--color-mocha);
   --color-gray-800: var(--color-coffee-and-cream);
   --color-gray-900: var(--color-coffee);
@@ -38,7 +40,8 @@
   .content-panel,
   .sidebar-pane,
   details > ul > li,
-  site-search button {
+  site-search button,
+  .right-sidebar {
     @apply border-0;
   }
 

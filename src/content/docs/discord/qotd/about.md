@@ -1,5 +1,5 @@
 ---
-title: Question of the Day
+title: About
 ---
 
 In the **Discord Server**, we have a Question of the Day which posts daily for
