@@ -61,13 +61,24 @@ export default defineConfig({
       logo: {
         src: "./src/assets/logo.gif",
       },
+      components: {
+        SiteTitle: "./src/components/SiteTitle.astro",
+        SocialIcons: "./src/components/SocialIcons.astro",
+        ThemeSelect: "./src/components/ThemeSelect.astro",
+      },
       customCss: [
-        "./src/tailwind.css",
-        "@fontsource/comfortaa",
-        "@fontsource/syne-mono",
-        "@fontsource/special-elite",
+        "./src/styles/global.css",
+        "@fontsource/patrick-hand-sc",
+        "@fontsource/monaspace-krypton",
+        "@fontsource-variable/lexend",
+        "@fontsource/germania-one",
       ],
       social: [
+        {
+          icon: "blueSky",
+          label: "BlueSky",
+          href: "https://bsky.app/profile/thehangedmanpub.bsky.social",
+        },
         {
           icon: "discord",
           label: "Discord",
@@ -75,7 +86,6 @@ export default defineConfig({
         },
       ],
       sidebar: [
-        { label: "Home", link: "/" },
         { label: "Code of Conduct", link: "/code" },
         { label: "Leadership Team", link: "/leadership" },
         {
@@ -102,26 +112,6 @@ export default defineConfig({
                 { label: "Submit a Picrew", link: "/discord/qotd/picrew" },
                 { label: "Archives", link: "/discord/qotd/archives" },
               ],
-            },
-          ],
-        },
-        {
-          label: "Communities",
-          items: [
-            {
-              label: "Discord",
-              link: "https://discord.gg/9RERC6R",
-              attrs: { target: "_blank" },
-            },
-            {
-              label: "Pillowfort",
-              link: "https://www.pillowfort.social/community/The%20Hanged%20Man",
-              attrs: { target: "_blank" },
-            },
-            {
-              label: "Dreamwidth",
-              link: "https://hangedmanpub.dreamwidth.org/",
-              attrs: { target: "_blank" },
             },
           ],
         },

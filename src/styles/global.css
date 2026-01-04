@@ -1,1 +1,118 @@
-@import "tailwindcss";
+@layer base, starlight, theme, components, utilities;
+
+@import "@astrojs/starlight-tailwind";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --font-sans: "Lexend", sans-serif;
+  --font-mono: "Monaspace Krypton", monospace;
+  --font-serif: "Patrick Hand SC", sans-serif;
+  --font-title: "Germania One", sans-serif;
+
+  --color-candlelight: #d8b166;
+  --color-coffee: #292522;
+  --color-creamer: #f1f1f1;
+  --color-croissant: #eae1db;
+  --color-eggnog: #ece1d7;
+  --color-fire: #bc5c00;
+  --color-latte: #7d6658;
+  --color-coffee-and-cream: #34302c;
+  --color-mocha: #54433a;
+  --color-rooibos: #523c3a;
+  --color-ostkaka: #c1a78e;
+  --color-pumpkin-spice: #e49b5d;
+  --color-thm-light: #943314;
+  --color-thm-dark: #471809;
+  --color-accent-200: var(--color-pumpkin-spice);
+  --color-accent-600: var(--color-fire);
+  --color-white: var(--color-creamer);
+  --color-gray-100: var(--color-rooibos);
+  --color-gray-300: var(--color-ostkaka);
+  --color-gray-700: var(--color-mocha);
+  --color-gray-800: var(--color-coffee-and-cream);
+  --color-gray-900: var(--color-coffee);
+}
+
+@layer components {
+  .content-panel,
+  .sidebar-pane,
+  details > ul > li,
+  site-search button {
+    @apply border-0;
+  }
+
+  header {
+    @apply dark:bg-rooibos/30 bg-rooibos/85 border-0 backdrop-blur-3xl;
+  }
+
+  a.site-title {
+    @apply font-title text-thm-dark dark:text-thm-light hover:text-candlelight font-normal;
+  }
+
+  .social-icons::after {
+    @apply border-0;
+  }
+
+  .sidebar-pane {
+    @apply bg-croissant dark:bg-coffee-and-cream;
+  }
+
+  a.large,
+  span.large {
+    @apply text-latte dark:text-eggnog font-serif text-2xl/tight font-normal;
+  }
+
+  a[aria-current*="page"] {
+    @apply text-creamer dark:text-coffee;
+  }
+
+  details > ul > li a {
+    @apply text-lg/tight;
+  }
+
+  .content-panel ul li {
+    @apply text-latte dark:marker:text-eggnog list-none;
+  }
+
+  .content-panel ul li::marker {
+    content: "✦   ";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h4,
+  h6 {
+    @apply text-latte dark:text-eggnog border-0 font-serif;
+  }
+
+  h1 {
+    @apply text-center;
+  }
+
+  b,
+  strong {
+    @apply text-fire dark:text-pumpkin-spice font-mono text-lg font-normal;
+  }
+
+  p,
+  ul,
+  ol,
+  li {
+    @apply text-lg;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  a:hover {
+    @apply underline decoration-wavy underline-offset-8;
+  }
+
+  .social {
+    @apply mt-0;
+  }
+}

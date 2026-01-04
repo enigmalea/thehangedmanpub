@@ -60,7 +60,6 @@ a few guidelines for participation.
 ## How Fics Are Chosen
 
 - Members complete a form to suggest fics. The form is open at all times.
-
   - Fics should be in the Dragon Age fandom.
   - Fics should be hosted on AO3.
   - Fics should be _complete_ at the time they are suggested.
@@ -73,7 +72,6 @@ a few guidelines for participation.
 
 - Mods will select select 3-4 fics or fic groups for the next month, and post a
   poll for members of the Discord to vote on.
-
   - In order to keep fic choice simplified and not have to aggregate votes
     across platforms, only the Discord will be allowed to vote on fic choices.
     If you would like to vote, please join!
