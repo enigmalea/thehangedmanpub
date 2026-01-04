@@ -110,7 +110,6 @@ event.
   grudges happen. We do not usually remove people from our communities based
   solely on hearsay from others, even with screenshots of past wrongdoing.
   Exceptions for this include:
-
   - Recent hate speech, death threats, etc
   - An ongoing pattern of abusive/harassing/toxic behavior
   - Past or current participation in call-outs, public shaming, or dogpiling of
