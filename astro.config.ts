@@ -1,3 +1,4 @@
+import astroNoEmail from "astro-noemail";
 import { defineConfig } from "astro/config";
 import icon from "astro-icon";
 import metaTags from "astro-meta-tags";
@@ -10,9 +11,9 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://thehangedmanpub.netlify.app",
-
+  site: "https://thehangedman.club",
   integrations: [
+    astroNoEmail(),
     icon(),
     sitemap(),
     metaTags(),
@@ -116,14 +117,21 @@ export default defineConfig({
         },
       ],
       sidebar: [
-        { label: "Code of Conduct", link: "/code" },
-        { label: "Leadership Team", link: "/leadership" },
+        { label: "Home", link: "/" },
         {
-          label: "Discord Server Resources",
-          autogenerate: { directory: "discord" },
+          label: "Codex",
+          autogenerate: { directory: "about" },
         },
         {
-          label: "Events",
+          label: "The Joining",
+          autogenerate: { directory: "community" },
+        },
+        {
+          label: "Member Inventory",
+          autogenerate: { directory: "resources" },
+        },
+        {
+          label: "Quests",
           items: [
             {
               label: "Arlathan eXchange",
@@ -137,7 +145,19 @@ export default defineConfig({
             },
           ],
         },
-        { label: "Credits", link: "/credits" },
+        {
+          label: "The Chantry Board",
+          items: [
+            {
+              label: "Leadership Team",
+              link: "/leadership",
+            },
+            {
+              label: "Credits",
+              link: "/credits",
+            },
+          ],
+        },
       ],
       plugins: [starlightLinksValidator(), starlightAutoSidebar()],
     }),

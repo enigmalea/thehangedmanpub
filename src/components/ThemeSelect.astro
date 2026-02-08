@@ -161,14 +161,14 @@ const id = `moon-mask-${crypto.randomBytes(4).toString("hex")}`;
       : "auto";
   }
 
-  /** Load the user’s preference from `localStorage`. */
+  /** Load the user's preference from `localStorage`. */
   function loadTheme(): Theme {
     return parseTheme(
       typeof localStorage !== "undefined" && localStorage.getItem(storageKey)
     );
   }
 
-  /** Store the user’s preference in `localStorage`. */
+  /** Store the user's preference in `localStorage`. */
   function storeTheme(theme: Theme): void {
     if (typeof localStorage !== "undefined") {
       localStorage.setItem(

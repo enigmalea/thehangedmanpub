@@ -76,7 +76,7 @@
   }
 
   .content-panel ul li {
-    @apply text-latte dark:marker:text-eggnog list-none;
+    @apply text-coffee-and-cream/60 dark:text-creamer/60 dark:marker:text-eggnog list-none;
   }
 
   .content-panel ul li::marker {
@@ -98,7 +98,7 @@
 
   b,
   strong {
-    @apply text-fire dark:text-pumpkin-spice font-mono text-lg font-normal;
+    @apply text-fire dark:text-pumpkin-spice font-mono text-base font-normal;
   }
 
   p,
