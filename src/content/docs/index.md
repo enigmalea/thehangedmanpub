@@ -1,10 +1,16 @@
 ---
-title: The Hanged Man
+title: ""
 description:
   The Hanged Man is an unofficial collective of Dragon Age fans who try to make
   a positive difference in the fandom community by giving fans a place to chat,
   share and create content, and interact.
+head:
+  - tag: title
+    content: The Hanged Man
 tableOfContents: false
+prev: false
+next: false
+pagefind: false
 ---
 
 ![](../../assets/banner.png)
