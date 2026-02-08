@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
-    "@astrojs/sitemap": "^3.6.0",
-    "@astrojs/starlight": "^0.37.1",
+    "@astrojs/sitemap": "^3.7.0",
+    "@astrojs/starlight": "^0.37.6",
     "@astrojs/starlight-tailwind": "^4.0.2",
     "@astrojs/ts-plugin": "^1.10.6",
     "@fontsource-variable/lexend": "^5.2.11",
@@ -24,9 +24,9 @@
     "@fontsource/patrick-hand-sc": "^5.2.8",
     "@iconify-json/fa6-solid": "^1.2.4",
     "@iconify-json/fa7-brands": "^1.2.1",
-    "@iconify-json/simple-icons": "^1.2.64",
+    "@iconify-json/simple-icons": "^1.2.69",
     "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.16.6",
+    "astro": "^5.17.1",
     "astro-icon": "^1.1.5",
     "astro-meta-tags": "^0.4.0",
     "astro-robots-txt": "^1.0.0",
@@ -38,19 +38,19 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
-    "@typescript-eslint/eslint-plugin": "^8.51.0",
-    "@typescript-eslint/parser": "^8.51.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
     "eslint": "^9.39.2",
     "eslint-plugin-astro": "^1.5.0",
     "eslint-plugin-css": "^0.11.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "globals": "^17.0.0",
+    "globals": "^17.3.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "typescript-eslint": "^8.51.0"
+    "typescript-eslint": "^8.54.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
