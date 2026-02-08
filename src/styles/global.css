@@ -12,7 +12,7 @@
 
   --color-candlelight: #d8b166;
   --color-coffee: #292522;
-  --color-creamer: #f1f1f1;
+  --color-creamer: #fff7ee;
   --color-croissant: #eae1db;
   --color-eggnog: #ece1d7;
   --color-fire: #bc5c00;
@@ -28,6 +28,7 @@
   --color-accent-600: var(--color-fire);
   --color-white: var(--color-creamer);
   --color-gray-100: var(--color-rooibos);
+  --color-gray-200: var(--color-croissant);
   --color-gray-300: var(--color-ostkaka);
   --color-gray-400: var(--color-croissant);
   --color-gray-500: var(--color-rooibos);
@@ -46,7 +47,7 @@
   }
 
   header {
-    @apply dark:bg-rooibos/30 bg-rooibos/85 border-0 backdrop-blur-3xl;
+    @apply dark:bg-rooibos/30 bg-rooibos/60 border-0 backdrop-blur-3xl;
   }
 
   a.site-title {
