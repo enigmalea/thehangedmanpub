@@ -1,5 +1,8 @@
 ---
 title: Credits
+description: bleh.
+sidebar:
+  order: 2
 tableOfContents: false
 ---
 

@@ -1,9 +1,16 @@
 ---
 title: Code of Conduct
 description:
-  The Values and Code of Conduct governing all The Hanged Man communities and
-  events.
+  The principles and expectations that keep our tavern welcoming, creative, and
+  warm across all The Hanged Man communities and events.
+sidebar:
+  order: 2
 ---
+
+These guidelines keep our tavern running smoothly—a place where people can
+create, collaborate, and interact with respect. This Code of Conduct applies to
+everyone who participates in or represents The Hanged Man across any of our
+spaces or events.
 
 ## Our Pledge
 
@@ -68,12 +75,13 @@ event.
   lesser celebrated and non-traditional types of fanworks like meta posts,
   playlists, manips/edits, layouts, etc!
 
-- **We believe in adults' right to sexual expression.**
+- **We believe in adults' right to sexual and mature expression.**
 
   Dragon Age is a rated mature dark fantasy RPG which is intended for adults.
   Therefore, most of our spaces are 18+. This means that we support, share, and
-  discuss NSFW content even if that content is what others would deem
-  "problematic".
+  discuss NSFW content which contains material that may be of a dark, sensitive,
+  or triggering nature without politicizing, kinkshaming, or otherwise policing
+  that content.
 
   We do not believe in or support kinkshaming.
 
@@ -110,7 +118,6 @@ event.
   grudges happen. We do not usually remove people from our communities based
   solely on hearsay from others, even with screenshots of past wrongdoing.
   Exceptions for this include:
-
   - Recent hate speech, death threats, etc
   - An ongoing pattern of abusive/harassing/toxic behavior
   - Past or current participation in call-outs, public shaming, or dogpiling of
@@ -129,6 +136,51 @@ event.
   our events, projects, or communities. We do not police member behaviors
   outside of our spaces, but if we are made aware of these actions members will
   be removed.
+
+## Respect for Creative Work & AI Use
+
+The Hanged Man is a community built around creativity and respect for the labor
+of fan creators, professional creators, and academics. Because AI tools can be
+used in ways that harm creators or exploit their work, we have clear
+expectations for how AI may and may not be used in our spaces.
+
+### Allowed
+
+- Using AI tools to assist your own creative process  
+  (e.g., outlining, brainstorming, grammar assistance, filters, lighting
+  adjustments)
+- Sharing AI-assisted work **as long as it is clearly labeled**
+- Participating in discussions about AI respectfully
+
+### Not Allowed
+
+- **Using AI to generate the majority of your “fanworks”** (e.g., fully
+  AI-written fic, fully AI-generated art)
+- **Passing AI-generated work off as entirely your own**
+- **Using AI tools to remix, imitate, or replicate another member's work without
+  explicit permission** This includes:
+  - uploading or pasting their writing into an AI tool
+  - feeding screenshots of their art, fic, or academic work into an AI tool
+  - using Discord's AI remix features on their work
+  - using AI to mimic their style, voice, or likeness
+- **Using AI in ways that harm creators or fandom spaces**, including:
+  - scraping AO3 or other archives to train models
+  - ingesting published works (fiction or academic) without permission
+  - using AI “readers” to bypass paid access to books or articles
+  - generating derivative works from copyrighted material without consent
+- **Harassing or shaming members for using or avoiding AI tools**  
+  Disagreement is fine; harassment is not.
+
+### Events
+
+Many of our events restrict or prohibit AI-generated content. Event rules always
+take priority.
+
+### Why This Policy Exists
+
+Our goal is to maintain a space where creators—fan, professional, and academic —
+feel respected and valued. AI can be a helpful tool, but it must not be used to
+exploit, replace, or steal the labor of real people.
 
 ## Scope
 
@@ -154,7 +206,7 @@ Conduct, and will communicate reasons for moderation decisions when appropriate.
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the moderators of the community or event in question. Please see
 individual communities or events for contact methods. Alternatively, you may
-also email [enigmalea@gmail.com](mailto:enigmalea@gmail.com) directly.
+also email admin@enigmalea.quest directly.
 
 All complaints will be reviewed and investigated promptly and fairly.
 

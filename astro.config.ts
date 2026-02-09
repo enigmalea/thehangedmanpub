@@ -1,23 +1,54 @@
+import astroNoEmail from "astro-noemail";
 import { defineConfig } from "astro/config";
-import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import metaTags from "astro-meta-tags";
+import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 import starlight from "@astrojs/starlight";
+import starlightAutoSidebar from "starlight-auto-sidebar";
 import starlightLinksValidator from "starlight-links-validator";
 import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://thehangedmanpub.netlify.app",
-
+  site: "https://thehangedman.club",
   integrations: [
+    astroNoEmail(),
     icon(),
     sitemap(),
     metaTags(),
-    expressiveCode({
-      themes: ["nord"],
+    robotsTxt({
+      policy: [
+        {
+          userAgent: "*",
+          disallow: ["/search", "/_astro/"],
+          crawlDelay: 5,
+        },
+        {
+          userAgent: "Googlebot",
+          allow: "/",
+          disallow: ["/_astro/"],
+          crawlDelay: 5,
+        },
+        {
+          userAgent: "CCBot",
+          disallow: "/",
+        },
+        {
+          userAgent: "GPTBot",
+          disallow: "/",
+        },
+        {
+          userAgent: "ChatGPT-User",
+          disallow: "/",
+        },
+        {
+          userAgent: "Slurp",
+          crawlDelay: 30,
+        },
+      ],
     }),
+    ,
     starlight({
       head: [
         {
@@ -61,13 +92,24 @@ export default defineConfig({
       logo: {
         src: "./src/assets/logo.gif",
       },
+      components: {
+        SiteTitle: "./src/components/SiteTitle.astro",
+        SocialIcons: "./src/components/SocialIcons.astro",
+        ThemeSelect: "./src/components/ThemeSelect.astro",
+      },
       customCss: [
-        "./src/tailwind.css",
-        "@fontsource/comfortaa",
-        "@fontsource/syne-mono",
-        "@fontsource/special-elite",
+        "./src/styles/global.css",
+        "@fontsource/patrick-hand-sc",
+        "@fontsource/monaspace-krypton",
+        "@fontsource-variable/lexend",
+        "@fontsource/germania-one",
       ],
       social: [
+        {
+          icon: "blueSky",
+          label: "BlueSky",
+          href: "https://bsky.app/profile/thehangedmanpub.bsky.social",
+        },
         {
           icon: "discord",
           label: "Discord",
@@ -76,57 +118,20 @@ export default defineConfig({
       ],
       sidebar: [
         { label: "Home", link: "/" },
-        { label: "Code of Conduct", link: "/code" },
-        { label: "Leadership Team", link: "/leadership" },
         {
-          label: "Discord Server Resources",
-          items: [
-            { label: "Links", link: "/discord/links" },
-            {
-              label: "Fic Club",
-              items: [
-                { label: "Introduction", link: "/discord/club" },
-                { label: "Suggest a Fic", link: "/discord/club/suggest" },
-                { label: "Fic Club Database", link: "/discord/club/database" },
-              ],
-            },
-            {
-              label: "Question of the Day",
-              items: [
-                { label: "Introduction", link: "/discord/qotd" },
-                { label: "Submit a Question", link: "/discord/qotd/question" },
-                {
-                  label: "Submit a Monthly Prompt",
-                  link: "/discord/qotd/prompt",
-                },
-                { label: "Submit a Picrew", link: "/discord/qotd/picrew" },
-                { label: "Archives", link: "/discord/qotd/archives" },
-              ],
-            },
-          ],
+          label: "Codex",
+          autogenerate: { directory: "about" },
         },
         {
-          label: "Communities",
-          items: [
-            {
-              label: "Discord",
-              link: "https://discord.gg/9RERC6R",
-              attrs: { target: "_blank" },
-            },
-            {
-              label: "Pillowfort",
-              link: "https://www.pillowfort.social/community/The%20Hanged%20Man",
-              attrs: { target: "_blank" },
-            },
-            {
-              label: "Dreamwidth",
-              link: "https://hangedmanpub.dreamwidth.org/",
-              attrs: { target: "_blank" },
-            },
-          ],
+          label: "The Joining",
+          autogenerate: { directory: "community" },
         },
         {
-          label: "Events",
+          label: "Member Inventory",
+          autogenerate: { directory: "resources" },
+        },
+        {
+          label: "Quests",
           items: [
             {
               label: "Arlathan eXchange",
@@ -140,9 +145,21 @@ export default defineConfig({
             },
           ],
         },
-        { label: "Credits", link: "/credits" },
+        {
+          label: "The Chantry Board",
+          items: [
+            {
+              label: "Leadership Team",
+              link: "/chantry/leadership/",
+            },
+            {
+              label: "Credits",
+              link: "/chantry/credits/",
+            },
+          ],
+        },
       ],
-      plugins: [starlightLinksValidator()],
+      plugins: [starlightLinksValidator(), starlightAutoSidebar()],
     }),
   ],
 
