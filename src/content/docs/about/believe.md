@@ -25,9 +25,10 @@ from fic and art to meta, playlists, edits, and everything in between.
 
 ## Adults can explore mature themes responsibly
 
-Many of our spaces are 18+. We support adults' right to create and discuss NSFW
-or “problematic” content within platform guidelines, without kinkshaming or
-policing fictional preferences.
+Many of our spaces are 18+. We support adults' right to create and discuss NSFW,
+dark, mature, or content others may find potentially sensitive or triggering
+within platform guidelines, without politicizing, kinkshaming, or policing
+fictional preferences.
 
 ## Boundaries matter
 

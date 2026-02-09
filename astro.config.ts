@@ -150,11 +150,11 @@ export default defineConfig({
           items: [
             {
               label: "Leadership Team",
-              link: "/leadership",
+              link: "/chantry/leadership/",
             },
             {
               label: "Credits",
-              link: "/credits",
+              link: "/chantry/credits/",
             },
           ],
         },

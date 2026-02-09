@@ -75,12 +75,13 @@ event.
   lesser celebrated and non-traditional types of fanworks like meta posts,
   playlists, manips/edits, layouts, etc!
 
-- **We believe in adults' right to sexual expression.**
+- **We believe in adults' right to sexual and mature expression.**
 
   Dragon Age is a rated mature dark fantasy RPG which is intended for adults.
   Therefore, most of our spaces are 18+. This means that we support, share, and
-  discuss NSFW content even if that content is what others would deem
-  "problematic".
+  discuss NSFW content which contains material that may be of a dark, sensitive,
+  or triggering nature without politicizing, kinkshaming, or otherwise policing
+  that content.
 
   We do not believe in or support kinkshaming.
 

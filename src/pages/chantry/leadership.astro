@@ -1,6 +1,6 @@
 ---
 import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
-import ModCard from "../components/ModCard.astro";
+import ModCard from "../../components/ModCard.astro";
 
 import { getCollection } from "astro:content";
 
@@ -10,17 +10,17 @@ const discordMods = [
   )),
 ];
 
-const pillowfortMods = [
-  ...(await getCollection("mods", (mod) =>
-    mod.data.mod_duties.includes("pillowfort")
-  )),
-];
+// const pillowfortMods = [
+//   ...(await getCollection("mods", (mod) =>
+//     mod.data.mod_duties.includes("pillowfort")
+//   )),
+// ];
 
-const dreamwidthMods = [
-  ...(await getCollection("mods", (mod) =>
-    mod.data.mod_duties.includes("dreamwidth")
-  )),
-];
+// const dreamwidthMods = [
+//   ...(await getCollection("mods", (mod) =>
+//     mod.data.mod_duties.includes("dreamwidth")
+//   )),
+// ];
 
 const arlathanMods = [
   ...(await getCollection("mods", (mod) =>
@@ -35,11 +35,19 @@ const dapolyMods = [
 ];
 ---
 
-<StarlightPage frontmatter={{ title: "Leadership Team" }}>
-  Our leadership teams are responsible for managing the day-to-day operations of
-  our communities and events and enforcing our <a href="/code"
-    >Code of Conduct</a
-  >. Each community or event may have different moderators.
+<StarlightPage
+  frontmatter={{
+    title: "Leadership Team",
+    description:
+      "Meet the folks who keep the tavern running — the moderators and organizers who support our communities and uphold our shared expectations.",
+    prev: false,
+    tableOfContents: false,
+  }}
+>
+  Our moderators help keep each community and event running smoothly. They
+  welcome members, guide conversations, and uphold our shared <a
+    href="/community/code">Code of Conduct</a
+  >. Different spaces have different teams based on their purpose and pace
 
   <h2>Discord</h2>
   <div
@@ -59,7 +67,7 @@ const dapolyMods = [
     }
   </div>
 
-  <h2>Pillowfort</h2>
+  <!-- <h2>Pillowfort</h2>
   <div
     class="grid grid-cols-1 items-end justify-items-start gap-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
   >
@@ -93,7 +101,7 @@ const dapolyMods = [
         );
       })
     }
-  </div>
+  </div> -->
 
   <h2>Arlathan eXchange</h2>
   <div
