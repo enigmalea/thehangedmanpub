@@ -37,7 +37,10 @@ const modCollection = defineCollection({
         row["Social 2"],
         row["Social 3"],
         row["Social 4"],
-      ].filter(Boolean);
+      ]
+        .map((s) => (typeof s === "string" ? s.trim() : ""))
+        .filter((s) => s.length > 0)
+        .map((url) => ({ url }));
 
       const id = name.toLowerCase().replace(/\s+/g, "-");
 
